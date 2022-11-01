@@ -1,17 +1,20 @@
 ## Project Proposal
 
-#### Code name: Video Game-1
+Code name: Video Game-1
 
-#### Project title: Study of Video Games
+Project title: Study of Video Games
 
-#### Authors:
+Authors:
+
 Jimmy Yang, xyang23@uw.edu
+
 Gordon Tran, gotran@uw.edu
+
 Kaia Armas, karmas@uw.edu
 
-#### Affiliation: INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
+Affiliation: INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
 
-#### Date: Autumn 2022
+Date: Autumn 2022
 
 ## Abstract:
 Our main question is what types of video games people enjoy, the differences in regions, and how they can benefit people. This question is important because we want to be able to help people choose the games they like, tell the cultural difference in the regions across the world, and we find out how video games can benefit people. To address the question, we will look into video game sales, ratings, and World Happiness scores.
@@ -41,21 +44,25 @@ Some benefits of video games are that it can relieve stress, boredom and improve
 - What is each region's most popular game/genre/platform/publisher? Comparison?
 
 	Importance: This question can help us to understand the cultural difference between each region.
+
 	Motivation: One thing that motivated this question is understanding cultural differences. This question can help us see what these differences are.
 
 - What is the most popular genre on each platform?
 
 	Importance: This question can help us figure out which genre of game people most enjoy.
+
 	Motivation: We are striving to show the different types of video games and how they differ from each other and to see which genre of game is most popular. We can then understand what people on different platforms prefer in terms of video games.
 
 - What is the correlation between the rating of a video game to the sales of the video game?
 
 	Importance: By comparing the rating of a video game to the sales of the video game, we can see how the reception of a video game affects the sales.
+
 	Motivation: By seeing the correlation between sales and ratings, we can have a better understanding of how people view video games, and it can help developers plan their games.
 
 - How does game sales relate to the World Happiness score? Does the region with a higher happiness score have more game sales?
 
 	Importance: We want to be able to see if the sales of video games have an effect on the World Happiness score.
+
 	Motivation: By looking at the World Happiness score and sales of video games, we might be able to see a correlation between the two, and we are able to see the benefits of playing video games.
 
 
@@ -90,23 +97,6 @@ This dataset is called “Steam Store Games (Clean dataset).” There are 18 var
 ## Expected Implications:  
 The goal of our project is to help gamers to find a game that they are interested in and help developers to get a better understanding on which type of game is more popular and be able to focus on the games that gamers like, so we expect our result can address the things above.
 Also, there’re a lot of debates on whether a video game is good or bad for people. We want to find the relationship between the score world happiness with the amount of video game sales. If our result is that the region with higher video game sales has a higher happiness score, then we can show that video games are beneficial to people, at least in the happiness area, vice versa.
-
-## The Dataset:
-### Video Game Sales with Ratings
-
-This dataset is called “Video Game Sales with Ratings,” and it has 16,719 observations and 16 variables. This dataset is about game sales; we are planning to use this dataset to help us answer most of our questions. We will use the dataset to find out what types of game and platform are more popular in different regions and find the relationship between game sales and World Happiness score.
-This dataset is an extension of another dataset called “Video Game Sales.” The “Video Game Sales” dataset was collected from VGChartz, a website that collects game sales data. The website claims that they only record the official shipment/sales data; those data are provided by the developers and publishers. So if they are telling the truth, then it's trustworthy. This dataset is on Kaggle, and it’s one of the best in Kaggle (7th vote). The “Video Game Sales with Ratings” dataset, created by Rush Kirubi, shares columns with the “Video Game Sales” dataset but includes some additional variables collected from Metacritic, a very popular and reputable game rating website. This dataset can benefit the gamers that want to find the game that they are interested in and might be able to help the author to gain some followers and Kaggle will have prize money for the people that made good datasets.
-
-###World Happiness Report 2019
-
-This dataset, called “World Happiness Report 2019, ” is about the happiness score of more than 150 countries around the world. It has 11 variables and 156 observations. We are planning to use this dataset to find the relationship between game sales and happiness scores.
-	This dataset was collected by “The World Happiness Report” in 2019 to show the rating of happiness scores of countries around the world. We think this dataset can benefit everyone because We believe a list ranking of happiest countries can encourage the country leaders to work harder to help their countries to get a higher ranking. They use the data from “Gallup World Poll surveys.” Both “The World Happiness Report” and the Gallup poll are very popular; the data is collected from random subjects. Based on their popularity, we believe the data is trustworthy.
-
-### Steam Store Games (Clean dataset)
-
-	This dataset is called “Steam Store Games (Clean dataset).” There are 18 variables and 1,069,460 observations. This dataset contains the games listed on Steam, a video game digital distribution service on PC. It shows a list of information about each game on Steam, such as the game rating and ownership amount. We want to use this data to answer what types of people enjoy. This dataset was created by Nik Davis around May 2019. They stated the purpose of creating this dataset was to be used as a data science learning journey. The data is gathered from the Steam Store and the SteamSpy APIs, which should be reliable as it takes data from the source.
-
-
 
 ## Limitations:
 One limitation that we have determined is that the video game sales dataset lists the sales as NA sales, EU sales, Japan sales, and others. We are planning to analyze the game sales data by region and find out if it has connections to the happiness level, but the game sales dataset only specifies the data for NA, EU, and Japan; the rest of the countries fall into the others category, which limits our ability to analyze the relationship between regions, other than NA, EU, and Japan, and its happiness level.
