@@ -74,10 +74,10 @@ This dataset is called “Video Game Sales with Ratings,” and it has 16,719 ob
 
 This dataset is an extension of another dataset called “Video Game Sales.” The “Video Game Sales” dataset was collected from VGChartz, a website that collects game sales data. The website claims that they only record the official shipment/sales data; those data are provided by the developers and publishers. So if they are telling the truth, then it's trustworthy. This dataset is on Kaggle, and it’s one of the best in Kaggle (7th vote). The “Video Game Sales with Ratings” dataset, created by Rush Kirubi, shares columns with the “Video Game Sales” dataset but includes some additional variables collected from Metacritic, a very popular and reputable game rating website. This dataset can benefit the gamers that want to find the game that they are interested in and might be able to help the author to gain some followers and Kaggle will have prize money for the people that made good datasets.
 
-### World Happiness Report 2019
-[2019 World Happiness Report](https://worldhappiness.report/ed/2019/)
+### World Happiness Report 2016
+[2016 World Happiness Report](https://worldhappiness.report/ed/2016/)
 
-This dataset, called “World Happiness Report 2019, ” is about the happiness score of more than 150 countries around the world. It has 11 variables and 156 observations. We are planning to use this dataset to find the relationship between game sales and happiness scores.
+This dataset, called “World Happiness Report 2016, ” is about the happiness score of more than 150 countries around the world. It has 11 variables and 156 observations. We are planning to use this dataset to find the relationship between game sales and happiness scores.
 
 This dataset was collected by “The World Happiness Report” in 2019 to show the rating of happiness scores of countries around the world. We think this dataset can benefit everyone because We believe a list ranking of happiest countries can encourage the country leaders to work harder to help their countries to get a higher ranking. They use the data from “Gallup World Poll surveys.” Both “The World Happiness Report” and the Gallup poll are very popular; the data is collected from random subjects. Based on their popularity, we believe the data is trustworthy.
 
@@ -86,13 +86,25 @@ This dataset was collected by “The World Happiness Report” in 2019 to show t
 
 This dataset is called “Steam Store Games (Clean dataset).” There are 18 variables and 1,069,460 observations. This dataset contains the games listed on Steam, a video game digital distribution service on PC. It shows a list of information about each game on Steam, such as the game rating and ownership amount. We want to use this data to answer what types of people enjoy. This dataset was created by Nik Davis around May 2019. They stated the purpose of creating this dataset was to be used as a data science learning journey. The data is gathered from the Steam Store and the SteamSpy APIs, which should be reliable as it takes data from the source.
 
+### Population by Country - 2020
+[Pop by Country](https://www.kaggle.com/datasets/tanuprabhu/population-by-country-2020)
+
+This data is have the poplation data for the countires around the world. The author is Tanu N Prabhu, he collected the data from a website call worldometers. I believe it's reliable because the website collect data from UN.
+
+### Top 100 Countries by Game Revenues
+[Top 100 Countries by Game Revenues](https://public.knoema.com/qjjodt/top-100-countries-by-game-revenues)
+
+This data is about the video game revenues of each countries, own by Keoema, a privately owned based data technology company, this dataset is base on revenue figures published by Newzoo.com, which is a very popular data source that many top-tier media will use. Base on that, I think the revenues data is reliable.
+
 #### Table 1: Summary of datasets
 
   | Data File                       | Observations| Variables|  
   | --------------------------------| ----------- |----------|
   | Video Game Sales with Ratings   | 16,719      |  16      |
-  | World Happiness Report 2019     | 156         |  11      |
+  | World Happiness Report 2016     | 158         |  11      |
   |Steam Store Games (Clean dataset)| 1,069,460   |  18      |
+  |Population by Country - 2020     | 235         |  11      |
+  |Top 100 Countries by Game Revenues| 115        |  18      |
 
 ## Expected Implications:  
 The goal of our project is to help gamers to find a game that they are interested in and help developers to get a better understanding on which type of game is more popular and be able to focus on the games that gamers like, so we expect our result can address the things above.
