@@ -6,7 +6,10 @@ In our project, we use the following data files and Application Programming Inte
 |Data File Name | Brief Description|
 |---------------| -----------------|
 |[example.cvs](./example.csv) | This file contains temperature data. (See report for details.)
-|[another-file](./filename2.csv) | Description ... 
+|[Video_Games_Sales_as_at_22_Dec_2016.csv](./Video_Games_Sales_as_at_22_Dec_2016.csv) | Video Game Sales with Ratings dataset 
+|[ObservationData_xinjatc.xlsx](./ObservationData_xinjatc.xlsx) | Top 100 Countries Vdieo Game dataset
+|Online-data-for-chapter-2-whr-2016.xlsx) | World happiness dataset (2016)
+|[population_by_country_2020.csv](./population_by_country_2020.csv) | Dataset about population of countries around the world 
 
 ## Application Programming Interfaces (API) (TODO: Update/delete for your PROJECT)
 
