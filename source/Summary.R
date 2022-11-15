@@ -1,9 +1,9 @@
 library(tidyverse)
 library("readxl")
 
-steam <- read.csv("steam.csv")
-sale <- read.csv("Video_Games_Sales_as_at_22_Dec_2016.csv")
-happy <- read_excel("Chapter2OnlineData.xls", sheet = "Figure2.6")
+steam <- read.csv("../data/steam.csv")
+sale <- read.csv("../data/Video_Games_Sales_as_at_22_Dec_2016.csv")
+happy <- read_excel("../data/Online-data-for-chapter-2-whr-2016.xlsx", sheet = "Figure2.2")
 
 # summary_info.R 
 # A source file that takes in a dataset and returns a list of info about it:
@@ -12,6 +12,8 @@ summary_info <- list()
 # Steam
 summary_info$steam_observations <- nrow(steam)
 summary_info$steam_variables <- ncol(steam)
+
+summary_info$steam_observations <- prettyNum(summary_info$steam_observations, big.mark = ",", scientific = FALSE)
 
 summary_info$steam_max_date <- steam %>%
   filter(release_date == max(release_date, na.rm = T)) %>%
@@ -29,7 +31,7 @@ summary_info$GS_variables <- ncol(sale)
 summary_info$GS_platform <- unique(sale$Platform)
 
 summary_info$GS_platform_num <- length(unique(sale$Platform))
-  
+
 summary_info$sale_min_date <- sale %>%
   filter(Year_of_Release == min(Year_of_Release, na.rm = T)) %>%
   select(Year_of_Release) %>% 
@@ -65,3 +67,4 @@ summary_info$unhappy_score <- happy %>%
   filter(`Happiness score` == min(`Happiness score`)) %>% 
   select(`Happiness score`)
 
+summary_info$GS_observations <- prettyNum(summary_info$GS_observations, big.mark = ",", scientific = FALSE)

@@ -1,26 +1,40 @@
 ---
 title: "Study of Video Games"
-author: "Jimmy Yang, Gordon Tran, Kaia Armas"
+author: "Jimmy Yang - xyang23@uw.edu, Gordon Tran - gotran@uw.edu, Kaia Armas - karmas@uw.edu"
 date: "11/12/2022"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+source("../source/Summary.R")
 source("../source/source.R")
+source("../source/chart-sp.R")
+source("../source/genretosales.R")
+source("../source/table .R")
 ```
 
 # Summary
-In our project, we will deal with three different datasets, the steam game dataset, the world game sales dataset, and the world happiness dataset.
 
-The steam dataset ([source](https://www.kaggle.com/datasets/nikdavis/steam-store-games?select=steam.csv)) has `r summary_info$steam_num_observations` observations and `r summary_info$steam_num_variables` variables. The dataset covers most of the games from `r summary_info$steam_min_date` to `r summary_info$steam_max_date`. This data also shows the information about each game, such as the number of positive and negative ratings and average playtime.
+In our project, we will deal with three different datasets, the Steam game dataset, the global video game sales dataset, and the World Happiness dataset.
 
-The game sales dataset ([source](https://www.kaggle.com/datasets/rush4ratio/video-game-sales-with-ratings)) has  `r summary_info$GS_observations` observations and `r summary_info$GS_variables` variables. It covers `r summary_info$GS_platform_num` platforms and `r summary_info$GS_observations` games from `r summary_info$sale_min_date` to `r summary_info$sale_max_date`. This dataset is about game sales, it contains information on game sales around the different regions for each game; the author separates the region into North America, European Union, Japan, and others. The dataset also has other information about each game, such as the ESRB ratings and Genre.
+The Steam dataset ([Source](https://www.kaggle.com/datasets/nikdavis/steam-store-games?select=steam.csv)) has `r summary_info$steam_observations` observations and `r summary_info$steam_num_variables` variables. The dataset covers most of the games from `r summary_info$steam_min_date` to `r summary_info$steam_max_date`. This data shows a lot of information about each game, such as the number of positive and negative ratings, and average playtime.
 
-The world happiness dataset  ([source](https://worldhappiness.report/ed/2019/)) contains the happiness score for `r summary_info$happy_observations` countries in 2019 and other scores that will impact the happiness score. Through out all `r summary_info$happy_observations` countries, `r summary_info$happies_country` is the country with the highest happiness score at `r summary_info$happies_score` and the most unhappy country is `r summary_info$unhappy_country`, with the score of `r summary_info$unhappy_score`
+The global video game sales dataset ([Source](https://www.kaggle.com/datasets/rush4ratio/video-game-sales-with-ratings)) has  `r summary_info$GS_observations` observations and `r summary_info$GS_variables` variables. It has `r summary_info$GS_platform_num` platforms and `r summary_info$GS_observations` games from `r summary_info$sale_min_date` to `r summary_info$sale_max_date`. This dataset is about game sales, it contains information on game sales around the different regions for each game; the author separates the region into North America, European Union, Japan, and others. The dataset also has other information about each game, such as the ESRB ratings and Genre.
 
-We are planning to use those datasets to help people find the best game that fit their interest and find out the connection bewteen the world happiness score with the game sale on different region.
+The World Happiness dataset  ([Source](https://worldhappiness.report/ed/2019/)) contains the happiness score for `r summary_info$happy_observations` countries in 2019 and other data that impact the happiness score. Throughout all `r summary_info$happy_observations` countries, `r summary_info$happies_country` is the country with the highest happiness score at `r summary_info$happies_score`, while the country will the lowest score is `r summary_info$unhappy_country`, with the score of `r summary_info$unhappy_score`.
 
+We are planning to use those datasets to help people find the best game that fits their interest and find out the connection between the World Happiness score with the global video game sales in different regions.
+
+# Table
+
+```{r table, echo = FALSE}
+knitr::kable(gmes_platform, "pipe")
+```
+
+##### Table 1. A table of video game platforms to the sales in millions
+
+We decided to make a table about the video game platforms and the sales (in millions). We decided to make a table about the platforms and their sales because we can then see which platform had the most sales and least sales. This will help us understand what kind of platforms people enjoy to play video games on and which platforms perform the best. By looking at the table, we can see that the top platform sales are PS2, Xbox 360, and the PS3. At the bottom, we can see the least performing platforms are PCFX, GG, and 3DO. By analyzing the table, we can understand the player base and which platforms are the most popular. 
 
 # Map
 ```{r happiness_map, echo = FALSE}
@@ -29,9 +43,39 @@ happiness_map
 
 ```
 
+##### Figure 1. The happiness score of each country
+
 ```{r le_map, echo = FALSE}
 
 revenue_map
 ```
 
-I decide to use maps to visualize the relationship between video games and happiness scores because both datasets include data for countries in the world; I think maps can give a better view of the comparison than other types of visualization. Both maps have some countries with no color due to the missing data, especially Africa. Still, in North America, Asia, and Australia, we can find some connection between video games and happiness scores. In the North American area, we can see that all the countries have a pretty high happiness score, and USA and Canada have a high amounts of money spent on video games per capita too. This also shows in Australia, where high happiness scores and a high amount of money spent on video games per capita. On the other hand, the Asia area, except Japan, has a pretty low amount of money spent on video games per capita with a pretty low happiness score. This shows that happiness scores and video games have some connection; countries with higher video game revenues will often have a higher happiness score.
+##### Figure 2. The video games sales for each country
+
+We decided to use maps to visualize the relationship between video games and happiness scores because both datasets include data for countries in the world. By using maps, we can get a better view of the comparison unlike other types of visualizations. The maps have some countries without any color due to the missing data, such as Africa. Despite that, in North America, Asia, and Australia, we can find some connection between video games sales and the happiness scores of the countries. In the North American area, we can see that all the countries have a pretty high happiness score. The US and Canada have high amounts of money spent on video games per capita. This also shows in Australia, where there are high happiness scores and high amounts of money spent on video games per capita. On the other hand, the Asian area, except Japan, has low amounts of money spent on video games per capita along with low happiness scores. We can infer that happiness scores and video games may have some connection as countries with higher video game revenues often have a higher happiness score.
+
+# Scatter Plot
+
+```{r scatter_plot_user, echo = FALSE}
+plot_user
+```
+
+##### Figure 3. A scatter plot of the global sales of video game to the Metacritic user score of the video game, global sales from 0 to 10 million.
+
+```{r scatter_plot_critic, echo=FALSE}
+plot_critic
+```
+
+##### Figure 4. A scatter plot of the global sales of video game to the Metacritic critic score of the video game, global sales from 0 to 10 million.
+
+We decided to use a scatter plot to show the relationship between video game sales to user and critic’s rating. We decided to do this because we wanted to see if there are any correlations between what a video game scores and how much sales it produced. This plot is zoomed in to between 0 and 10 million sales because that is where the majority of the data is, with there being some outliers way outside the range. Looking at the plot, we can see that both of the plots are clumped around, with increasing global sales as the scores are increasing. By looking into the scatter plot, we found that for the user scores, there is not much of a correlation between the two, however for critic’s scores, we can see that there is a correlation in the higher scores. We can assume that this is probably because as a critic scores something higher, more people trust the rating and buy the game. We can also assume that people trust critics more than regular users since there is a difference in correlation between user score and critic score.
+
+# Bar Graph
+
+```{r bar_graph, echo=FALSE}
+genretosales
+```
+
+##### Figure 5. A bar graph of video games genre and their sales.
+
+We decided to use a bar graph to look at the relationship between video games genre and the sales of those genres (in millions). By using a bar graph, we can see the amount of sales each video game genre has. This can help us see which genre sells the best and infer as to what kind of games the general public enjoys to play. By looking at our bar graph, we can see that the highest selling genres are sports and action games. We can also see that the least selling games are adventure, puzzle, simulation and strategy games. The other mid range genres are shooter, role-playing, racing, platform, fighting, and misc. This has helped us see how popular some genres are compared to others, for example there is a large difference between action games and puzzles, and has deepened our understanding of what type of video games the majority of people like.
