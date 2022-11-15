@@ -59,7 +59,7 @@ Some benefits of video games are that it can relieve stress, boredom and improve
 
 	Motivation: By seeing the correlation between sales and ratings, we can have a better understanding of how people view video games, and it can help developers plan their games.
 
-- How does game sales relate to the World Happiness score? Does the region with a higher happiness score have more game sales?
+- How does amount of money spend on video game relate to the World Happiness score? Does the the people live in a region with a higher happiness score spend more money on gaming?
 
 	Importance: We want to be able to see if the sales of video games have an effect on the World Happiness score.
 
@@ -89,12 +89,12 @@ This dataset is called “Steam Store Games (Clean dataset).” There are 18 var
 ### Population by Country - 2020
 [Pop by Country](https://www.kaggle.com/datasets/tanuprabhu/population-by-country-2020)
 
-This data is have the poplation data for the countires around the world. The author is Tanu N Prabhu, he collected the data from a website call worldometers. I believe it's reliable because the website collect data from UN.
+This data is have the poplation data for the countires around the world. The author is Tanu N Prabhu, he collected the data from a website call worldometers. I believe it's reliable because the website collect data from UN. There'are 235 observations and 11 variables. We are going to combine this dataset with the revenues to find out how much money on vdieo game spend per person in one country.
 
 ### Top 100 Countries by Game Revenues
 [Top 100 Countries by Game Revenues](https://public.knoema.com/qjjodt/top-100-countries-by-game-revenues)
 
-This data is about the video game revenues of each countries, own by Keoema, a privately owned based data technology company, this dataset is base on revenue figures published by Newzoo.com, which is a very popular data source that many top-tier media will use. Base on that, I think the revenues data is reliable.
+This data is about the video game revenues of each countries, own by Keoema, a privately owned based data technology company, this dataset is base on revenue figures published by Newzoo.com, which is a very popular data source that many top-tier media will use. Base on that, I think the revenues data is reliable. There's 115 observations and 18 variables. We are planing to use this dataset to find out the relationship between video games and the world happiness score.
 
 #### Table 1: Summary of datasets
 
@@ -108,7 +108,7 @@ This data is about the video game revenues of each countries, own by Keoema, a p
 
 ## Expected Implications:  
 The goal of our project is to help gamers to find a game that they are interested in and help developers to get a better understanding on which type of game is more popular and be able to focus on the games that gamers like, so we expect our result can address the things above.
-Also, there’re a lot of debates on whether a video game is good or bad for people. We want to find the relationship between the score world happiness with the amount of video game sales. If our result is that the region with higher video game sales has a higher happiness score, then we can show that video games are beneficial to people, at least in the happiness area, vice versa.
+Also, there’re a lot of debates on whether a video game is good or bad for people. We want to find the relationship between the score world happiness with the amount of video game revenues of that country. If our result is that the region with higher video game sales has a higher happiness score, then we can show that video games are beneficial to people, at least in the happiness area, vice versa.
 
 ## Limitations:
 One limitation that we have determined is that the video game sales dataset lists the sales as NA sales, EU sales, Japan sales, and others. We are planning to analyze the game sales data by region and find out if it has connections to the happiness level, but the game sales dataset only specifies the data for NA, EU, and Japan; the rest of the countries fall into the others category, which limits our ability to analyze the relationship between regions, other than NA, EU, and Japan, and its happiness level.
