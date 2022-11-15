@@ -18,7 +18,7 @@ source("../source/table .R")
 
 In our project, we will deal with three different datasets, the Steam game dataset, the global video game sales dataset, and the World Happiness dataset.
 
-The Steam dataset ([Source](https://www.kaggle.com/datasets/nikdavis/steam-store-games?select=steam.csv)) has `r summary_info$steam_observations` observations and `r summary_info$steam_num_variables` variables. The dataset covers most of the games from `r summary_info$steam_min_date` to `r summary_info$steam_max_date`. This data shows a lot of information about each game, such as the number of positive and negative ratings, and average playtime.
+The Steam dataset ([Source](https://www.kaggle.com/datasets/nikdavis/steam-store-games?select=steam.csv)) has `r summary_info$steam_observations` observations and `r summary_info$steam_variables` variables. The dataset covers most of the games from `r summary_info$steam_min_date` to `r summary_info$steam_max_date`. This data shows a lot of information about each game, such as the number of positive and negative ratings, and average playtime.
 
 The global video game sales dataset ([Source](https://www.kaggle.com/datasets/rush4ratio/video-game-sales-with-ratings)) has  `r summary_info$GS_observations` observations and `r summary_info$GS_variables` variables. It has `r summary_info$GS_platform_num` platforms and `r summary_info$GS_observations` games from `r summary_info$sale_min_date` to `r summary_info$sale_max_date`. This dataset is about game sales, it contains information on game sales around the different regions for each game; the author separates the region into North America, European Union, Japan, and others. The dataset also has other information about each game, such as the ESRB ratings and Genre.
 
