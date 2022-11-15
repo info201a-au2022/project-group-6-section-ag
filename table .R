@@ -1,4 +1,5 @@
 gmes_df<-video_games %>% 
-  filter(Genre !="") %>%
-  group_by(Genre) %>%
-  summarize(sales=sum(Global_Sales)) 
+  filter(Platform !="") %>%
+  group_by(Platform) %>%
+  summarize(sales=sum(Global_Sales)) %>% 
+  arrange(-sales)
