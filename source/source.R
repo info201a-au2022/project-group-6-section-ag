@@ -31,6 +31,7 @@ happiness_map <- ggplot(world) +
           x = "Longitude",
           y = "Latitude")
 
+
 revenue <- revenues %>% 
   select(region = `Country Name`, `2017Q1`)
 
