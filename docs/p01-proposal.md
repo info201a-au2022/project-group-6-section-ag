@@ -41,13 +41,8 @@ Some benefits of video games are that it can relieve stress, boredom and improve
 
 
 ## Research Questions:
-- What is each region's most popular game/genre/platform/publisher? Comparison?
 
-	Importance: This question can help us to understand the cultural difference between each region.
-
-	Motivation: One thing that motivated this question is understanding cultural differences. This question can help us see what these differences are.
-
-- What is the most popular genre on each platform?
+- What is the most popular video game genre?
 
 	Importance: This question can help us figure out which genre of game people most enjoy.
 
@@ -114,6 +109,26 @@ Also, there’re a lot of debates on whether a video game is good or bad for peo
 One limitation that we have determined is that the video game sales dataset lists the sales as NA sales, EU sales, Japan sales, and others. We are planning to analyze the game sales data by region and find out if it has connections to the happiness level, but the game sales dataset only specifies the data for NA, EU, and Japan; the rest of the countries fall into the others category, which limits our ability to analyze the relationship between regions, other than NA, EU, and Japan, and its happiness level.
 
 Another limitation is that the dataset we are using is not recent, it only covers the game through 2017, and it has some missing games, which might make our results to be less reliable and not up to date with the current time. Same as the World Happiness dataset, it only has data from 156 countries, and we have 195 countries in the world.
+
+## Findings
+
+- What is the most popular genre on each platform?
+
+For this question, we made a bar graph that shows the game sales in different genre of game and found that action game is have the most number of sales
+
+- What is the correlation between the rating of a video game to the sales of the video game?
+
+
+- How does amount of money spend on video game relate to the World Happiness score? Does the the people live in a region with a higher happiness score spend more money on gaming?
+
+
+## Discussion
+
+
+
+## Conclusion
+
+
 
 ## References:
 1. American Psychological Association. (n.d.). *Violent video games can increase aggression.* American Psychological Association. Retrieved October 30, 2022, from https://www.apa.org/news/press/releases/2000/04/video-games
