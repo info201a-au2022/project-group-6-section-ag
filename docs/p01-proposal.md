@@ -114,19 +114,25 @@ Another limitation is that the dataset we are using is not recent, it only cover
 
 - What is the most popular genre on each platform?
 
-For this question, we made a bar graph that shows the game sales in different genre of game and found that action game is have the most number of sales
+For this question, we made a bar graph that shows the game sales in different genre of game and found that action game is have the most number of sales, followed by sport games. The least popular video game genre is strategy games.
 
 - What is the correlation between the rating of a video game to the sales of the video game?
 
+To answer this question, we created two scatter plots to show the relationship between video game sales and user and critic's rating. As result, for critic's rating, we found that when the rating score increase, the world sales tend to increase too. But for the user rating, the correlation is very weak, we don't think there's a relationship between user rating and the video game sales.
 
-- How does amount of money spend on video game relate to the World Happiness score? Does the the people live in a region with a higher happiness score spend more money on gaming?
+- How does amount of money spend on video game relate to the World Happiness score? Does the people live in a region with a higher happiness score spend more money on gaming?
+
+For this question, we made two different map shows the happiness score and average video game money spent on different countries. Due to the missing data on Africa, we can't find the connection, but on North America, Asia, and Australia, we found that the amount of money spent on video games does impact the happiness scores, in most cases, countries with more money people spend on games, tend to have a higher happiness score.
 
 
 ## Discussion
 
-
+One of the goals of our project is to help developers to have better understand which type of game is more popular on the market. We believe that video game sales can tell the popularity on one types of game, by showing the games sales for different types of games, we can help developers to better understand which type of game can help them earn money and they probably want to focus on making those types of games. 
+Another goal for this project is to found out the impact of video game to people's mood. We had heard many times about video game can make people irritable and anxiety, but will also help people relieve stress and happier. This two opinion is completely opposite, and we are interested to find out which opinion is more true. We believe that the amount of money that people spent on video games on one specific country can show the popularity of video game on that country and we found that countries with higher money spend on video game often have a higher happiness score. This shows that video games does have positive impact on people's mood in most cases.
+Another thing we are interested is the connection between video game sales and rating, and we found that there's a connection between vdieo game sales and critic's rating but we can't find a evidence shows the connection between user rating and sales. This is important because it show the impact of critic rating to the game sales and we think that's probably because it will give the game more 
 
 ## Conclusion
+
 
 
 
