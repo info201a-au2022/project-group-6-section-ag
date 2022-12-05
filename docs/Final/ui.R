@@ -9,8 +9,10 @@
 
 library(shiny)
 library(plotly)
+library(markdown)
 source("source.R")
 source("chart-sp.R")
+
 
 map_sidebar <- sidebarPanel(
   selectInput("Plot", "Select a Map", 
@@ -26,6 +28,9 @@ map_main <- mainPanel(
                height = "600px")
 )
 
+map_summary_content <- mainPanel(
+  htmlOutput("map_summ")
+)
 
 map_panel <- tabPanel(
   "Maps",
@@ -35,6 +40,9 @@ map_panel <- tabPanel(
   sidebarLayout(
     map_sidebar,
     map_main
+  ),
+  verticalLayout(
+    map_summary_content
   )
 )
 
@@ -225,13 +233,23 @@ genre_side<-sidebarPanel(
 genre_main<-mainPanel(
   plotOutput("genreplot") 
 )
+
+genre_summary_content <- mainPanel(
+  htmlOutput("genre_summ")
+)
+
 Genre_panel<-tabPanel(
   "Genre Sales",
   titlePanel(
     "Genre Sales"
   ),
-  sidebarLayout(genre_side,genre_main)
+  sidebarLayout(genre_side,genre_main),
+  verticalLayout(
+    genre_summary_content
+  )
 )
+
+
 
 
 shinyUI(fluidPage(navbarPage("Video Game", 

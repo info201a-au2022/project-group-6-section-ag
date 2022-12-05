@@ -12,10 +12,19 @@ library(tidyverse)
 library(plotly)
 library(ggplot2)
 library(ggpubr)
+library(markdown)
 source("source.R")
 source("chart-sp.R")
 
 shinyServer(function(input, output, session) {
+  
+  output$map_summ <- renderUI({           
+    includeMarkdown(knitr::knit('map.Rmd'))          
+  })
+  
+  output$genre_summ <- renderUI({           
+    includeMarkdown(knitr::knit('genre.Rmd'))          
+  })
 
   observeEvent(input$submit,{
     output$Maps = renderPlotly({
