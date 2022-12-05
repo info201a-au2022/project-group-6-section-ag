@@ -60,9 +60,6 @@ revenue_map <- ggplot(world2) +
            y = "Latitude")
 
 
-
-setwd("/Users/kaiaarmas/Documents/info201/project-group-6-section-ag/docs/Summary")
-
 video_games<-read.csv("Video_Games_Sales_as_at_22_Dec_2016.csv")
 platforms<-unique(video_games[c("Platform")])
 platforms<-platforms %>%

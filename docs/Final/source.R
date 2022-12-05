@@ -54,8 +54,30 @@ revenue_map <- ggplot(world2) +
     mapping = aes(x = long, y = lat, group = group, fill = Revenues_per_person),
     color = "white",
     size = .1 
-  ) + labs(title = "Heat map of the amount of money spent on video games per capita",
-           subtitle = "(Based on the total video game revenues and population in that country, (revenues/pop))",
-           fill = "Money spent on VG per capita",
+  ) + labs(title = "Heat map of video game expenditure per capita",
+           fill = "Money spent on \nVG per capita",
            x = "Longitude",
            y = "Latitude")
+
+
+video_games<-read.csv("Video_Games_Sales_as_at_22_Dec_2016.csv")
+platforms<-unique(video_games[c("Platform")])
+platforms<-platforms %>%
+  pull(Platform)
+build_plot<-function(platform){
+  gmes_df<-video_games %>% 
+    filter(Genre !="") %>%
+    filter(Platform==platform) %>%
+    group_by(Genre) %>%
+    summarize(sales=sum(Global_Sales)) 
+  
+  genretosales<-ggplot(data = gmes_df,
+                       aes(x=Genre,y=sales)) +
+    geom_bar(position = "dodge",stat = "identity", fill="steelblue") + 
+    scale_x_discrete(guide = guide_axis(n.dodge = 2)) +
+    labs(title =paste(platform, "Genre Vs. Sales (millions)",sep=" - "), y = "Sales")
+  
+ return(genretosales)
+  
+  
+}

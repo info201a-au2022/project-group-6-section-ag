@@ -5,9 +5,9 @@ account: jimmy123
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7743512
-bundleId: 6575267
+bundleId: 6591620
 url: https://jimmy123.shinyapps.io/Maps/
-when: 1669860265.11083
-lastSyncTime: 1669860265.11084
+when: 1670212830.59655
+lastSyncTime: 1670212830.59656
 asMultiple: FALSE
 asStatic: FALSE
