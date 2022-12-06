@@ -66,7 +66,7 @@ shinyServer(function(input, output, session) {
   output$Map2 = renderPlotly({
     revenue_map
   })
-  output$genreplot = renderPlot({
+  output$genreplot = renderPlotly({
     build_plot(input$platform)
     
     

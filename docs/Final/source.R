@@ -2,6 +2,7 @@ library(tidyverse)
 library("readxl")
 library("knitr")
 library("maps")
+library(plotly)
 
 steam <- read.csv("steam.csv")
 sale <- read.csv("Video_Games_Sales_as_at_22_Dec_2016.csv")
@@ -76,6 +77,8 @@ build_plot<-function(platform){
     geom_bar(position = "dodge",stat = "identity", fill="steelblue") + 
     scale_x_discrete(guide = guide_axis(n.dodge = 2)) +
     labs(title =paste(platform, "Genre Vs. Sales (millions)",sep=" - "), y = "Sales")
+  
+  genretosales <- ggplotly(genretosales)
   
  return(genretosales)
   

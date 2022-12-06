@@ -231,7 +231,7 @@ genre_side<-sidebarPanel(
   
 )
 genre_main<-mainPanel(
-  plotOutput("genreplot") 
+  plotlyOutput("genreplot") 
 )
 
 genre_summary_content <- mainPanel(

@@ -5,9 +5,9 @@ account: jimmy123
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7813359
-bundleId: 6591872
+bundleId: 6600767
 url: https://jimmy123.shinyapps.io/AG-6/
-when: 1670217682.10665
-lastSyncTime: 1670217682.10666
+when: 1670357219.27372
+lastSyncTime: 1670357219.27374
 asMultiple: FALSE
 asStatic: FALSE
