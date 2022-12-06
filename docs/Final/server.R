@@ -22,6 +22,10 @@ shinyServer(function(input, output, session) {
     includeMarkdown(knitr::knit('map.Rmd'))          
   })
   
+  output$report <- renderUI({           
+    includeMarkdown(knitr::knit('P1P.Rmd'))          
+  })
+  
   output$genre_summ <- renderUI({           
     includeMarkdown(knitr::knit('genre.Rmd'))          
   })

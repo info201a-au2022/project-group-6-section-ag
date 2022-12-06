@@ -249,6 +249,8 @@ Genre_panel<-tabPanel(
   )
 )
 
+Report <- tabPanel("Report",
+                  htmlOutput("report"))
 
 
 
@@ -257,7 +259,8 @@ shinyUI(fluidPage(navbarPage("Video Game",
                              Genre_panel,
                              scatter_panel,
                              map_panel,
-                             summ_panel)
+                             summ_panel,
+                             Report)
                   )
         )
 
