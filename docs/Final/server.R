@@ -72,26 +72,39 @@ shinyServer(function(input, output, session) {
     
     
   })
-  output$wiiplot = renderPlot({
+  output$wiiplot = renderPlotly({
     build_plot("Wii")
     
     
     
   })
-  output$x360plot = renderPlot({
+  output$x360plot = renderPlotly({
     build_plot("X360")
     
     
     
   })
-  output$pcplot = renderPlot({
+  output$pcplot = renderPlotly({
     build_plot("PC")
     
     
     
   })
-  scatterplot=renderPlot({
-    build_plot("Score VS Sales") 
+  output$scatterplot=renderPlotly({
+    p <- plot_ly(data = vgs_test,
+                 x = vgs_test[, "Critic"],
+                 y = vgs_test[, "Global"],
+                 type = "scatter",
+                 mode = "markers",
+                 opacity = 1,
+                 marker = list(size = 10, 
+                               line = list(
+                                 color = "rgba(10, 150, 255,0.3", 
+                                 width = 0))) %>%
+      layout(title = paste0(input$scorer, " Score", " VS ", input$region, " Sales"),
+             xaxis = list(title = paste0("Critic", " Score")),
+             yaxis = list(title = paste0("Global", " Sales (millions)")))
+    return(p)
   })
   
 })
