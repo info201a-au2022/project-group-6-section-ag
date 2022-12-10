@@ -35,7 +35,8 @@ shinyServer(function(input, output, session) {
       switch(isolate(input$Plot),
              "Happiness Score Map" = happiness_map,
              "Video Game Money Spend per Person Map" = revenue_map)
-    })
+    }) # Learned from A5, and I got this idea about submit button idea here: https://stackoverflow.com/questions/69414472/select-plot-from-a-dropdown-menu-in-rshiny
+    
     
   })
   
